@@ -9,7 +9,7 @@ function App() {
   const [contract, setContract] = useState(null);
   const [raffleDetails, setRaffleDetails] = useState({
     entranceFee: "",
-    interval: "",
+    interval: "59",
     numberOfPlayers: "",
     raffleState: "",
     recentWinner: "",
@@ -174,6 +174,7 @@ function App() {
       </div>
       <h3 id="winner">Recent Winner: {raffleDetails.recentWinner || "N/A"} </h3>
       <img src="./timer.webp" id="timer" alt="" />
+      {/* <Counter interval={raffleDetails.interval} /> */}
       {raffleDetails.interval && <Counter interval={raffleDetails.interval} />}
       {raffleDetails.error && <CustomError error={raffleDetails.error} />}
     </>
