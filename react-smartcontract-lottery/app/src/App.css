@@ -26,7 +26,7 @@ body::after {
   top: -10px;
   left: -10px;
   z-index: -5;
-  background: url("./frame.webp") no-repeat;
+  background: url("../public/frame.webp") no-repeat;
 }
 
 body::before {
@@ -37,7 +37,7 @@ body::before {
   z-index: -5;
   top: 19%;
   right: 10%;
-  background: url("./id.webp") no-repeat;
+  background: url("../public/id.webp") no-repeat;
   background-size: contain;
   transform: rotateY(180deg);
   filter: contrast(2);
@@ -73,7 +73,7 @@ button {
   position: absolute;
   width: 340px;
   height: 140%;
-  background-image: url("./robot.webp");
+  background-image: url("../public/robot.webp");
   left: 23%;
   top: -40%;
   background-repeat: no-repeat;
